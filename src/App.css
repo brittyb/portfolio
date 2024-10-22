@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin:auto;
+  max-width: 500px;
 }
 
 .App-logo {
@@ -103,11 +105,8 @@ main {
  
   
   div.home{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 200px;
+    
+    margin-top: 100px;
   }
   
   
@@ -129,16 +128,13 @@ main {
   
   .section-title-div{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
     background-color: #323132;
-    max-width: 500px;
-    width:100px;
+  
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin: auto;
     transition: opacity 1.4s ease; 
     border-radius: 30px;
     text-transform: uppercase;
@@ -177,9 +173,7 @@ main {
 .section-div{
    
     scroll-margin-top: 150px;
-    width:fit-content;
-    margin-left: auto;
-    margin-right: auto;
+
     display: flex;
     flex-direction: column;
 }
@@ -189,15 +183,12 @@ main {
 .skill-div{
     background-color: #252525;
     border-radius: 50px;
-    width:40%;
     width:300px;
     height:100px;
-    max-height: 100px;
     padding:5px;
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    vertical-align: top; 
     transition: opacity 1.4s ease; 
 
 }
@@ -211,18 +202,12 @@ main {
 }
 
 .skill-name{
-    text-align: center;
-    display: inline-block;
     color:#a09ba2;
 }
 
 .row{
-    
-    margin-left: auto;
-    margin-right: auto;
     margin-top:50px;
-    align-items: center; 
-    justify-content: center; 
+    
     display: flex; 
     flex-wrap: wrap; 
     gap: 10px; 
@@ -307,7 +292,6 @@ p {
 
 div.resume {
     margin-bottom: 400px;
-    text-align: center;
     
 }
 .resume a {
@@ -324,9 +308,7 @@ div.resume {
   margin-top: 200px;
   display:block;
   padding:10px;
-  width:fit-content;
-  margin-left: auto;
-  margin-right: auto;
+
   transition: opacity 1.4s ease; 
 }
 
@@ -340,11 +322,9 @@ div.resume {
 
 .course-div {
   background-color: #444444;
-  text-align: center;
+
   width:500px;
   border-radius: 15px;
-  margin-left: auto;
-  margin-right: auto;
   transition: opacity 1.4s ease; 
 }
 
@@ -357,8 +337,7 @@ div.resume {
 input{
   
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+
   margin-top: 10px;
   
   
@@ -376,16 +355,10 @@ input{
 
 
 
-form{
-  justify-content: center;
-  text-align: center;
-    
-}
 
 .contact button{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 textarea{
