@@ -132,11 +132,17 @@ main {
     justify-content: center;
     align-items: center;
     background-color: #323132;
-    width: 500px;
+    max-width: 500px;
+    width:100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin: auto;
     transition: opacity 1.4s ease; 
     border-radius: 30px;
     text-transform: uppercase;
+    margin-top: 300px;
   }
   
   .foreground-opacity {
@@ -169,17 +175,16 @@ main {
 }
 
 .section-div{
-    margin-top:300px;
-    margin-bottom: 100px;
+   
     scroll-margin-top: 150px;
     width:fit-content;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-#about {
-    scroll-margin-top: 200px; /* Adjust this value based on the height of your fixed navigation bar */
-}
+
 
 .skill-div{
     background-color: #252525;
@@ -219,7 +224,7 @@ main {
     align-items: center; 
     justify-content: center; 
     display: flex; 
-    flex-wrap: nowrap; 
+    flex-wrap: wrap; 
     gap: 10px; 
     max-width: 100%; 
 }
@@ -387,4 +392,12 @@ textarea{
   height: 300px;
   resize:none;
   overflow-y: scroll;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+#aboutHeading {
+  display: none;
 }

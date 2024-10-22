@@ -175,7 +175,7 @@ function App() {
     <a id="resumeLink" href="#resume" onClick={() => setActive(document.getElementById('resumeLink'))}>Resume</a>
     <a id="contactLink" href="#contact" onClick={() => setActive(document.getElementById('contactLink'))}>Contact</a>
     </div>
-    <div id="about"></div>
+    
     
 
     
@@ -195,10 +195,10 @@ function App() {
     </div>
 
     <SectionTitle name="about"></SectionTitle>
-  
+    <SectionTitle name="Skills"/>
       <div id="skills" className="skills section-div">
-      <SectionTitle name="Skills"/>
       
+      <div className="skill-rows">
       <div className="row">
       <Skill name="React" link="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"></Skill>
       <Skill name="Java" link="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"></Skill>
@@ -215,10 +215,11 @@ function App() {
         <Skill name="Git" link="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"></Skill>
         <Skill name="Python" link="https://i.pinimg.com/originals/82/a2/18/82a2188c985ce75402ae44fc43fe7e5e.png"></Skill>
         <Skill name="MIPS" link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDZxkoYfqOY6Jbr90GI-u9CxuBv9NxtQA3fjG5H8gNFjrJbdPTxWUeVmIUjBC92CTkZzA&usqp=CAU"></Skill>
-      
+        </div>
         
       </div>
       <SmallSectionTitle name="Relevant Coursework"></SmallSectionTitle>
+      <div className="course-rows">
       <Course name="Data Structures and Algorithms"></Course>
       <Course name="Software Architecture"></Course>
       <Course name="Artificial Intelligence"></Course>
@@ -228,14 +229,15 @@ function App() {
 
       <Course name="Introduction to Computer Engineering"></Course>
       </div>
-
+      </div>
+      <SectionTitle name="Projects" />
       <div id="projects" className="projects section-div">
 
       
 
-      <SectionTitle name="Projects" />
       
-      </div>
+      
+     
       
       <div className="row">
         <Project name="Scrapbook" description="A website that lets couples document the dates they had together. Utilizes Google Gemini API
@@ -258,16 +260,17 @@ function App() {
         , turn on the table light, and look in the mirror. 3d models made in blender." link="https://github.com/brittyb/CS370-Fall2022"
         imagePath="/graphics-project.png"></Project>
       </div>
-
+      </div>
+      <SectionTitle name="Resume"/>
       <div id="resume" className="resume section-div">
-        <SectionTitle name="Resume"/>
+        
         <a href="Resume April 2024.pdf" target="_blank"><button>View</button></a>
         <a href="Resume April 2024.pdf" download="Resume Brittany Barnes"><button>Download</button></a>
 
       </div>
-      
-      <div id="contact" className="contact section-div">
       <SectionTitle name="Contact" />
+      <div id="contact" className="contact section-div">
+      
       <div className="contact-div"></div>
       <form action="https://api.web3forms.com/submit" method="POST">
         <h3>Leave me a message...</h3>
