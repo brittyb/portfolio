@@ -168,25 +168,25 @@ function Project(props){
 function App() {
   return (
     <div className="App">
-      <div class="topnav">
-      <a id="aboutLink" class="active" href="#about" onclick="setActive(this)">About</a>
-      <a id="skillsLink" href="#skills" onclick="setActive(this)">Skills</a>
-      <a id="projectsLink" href="#projects" onclick="setActive(this)">Projects</a>
-      <a id="resumeLink" href="#resume" onclick="setActive(this)">Resume</a>
-      <a id="contactLink" href="#contact" onclick="setActive(this)">Contact</a>
+      <div className="topnav">
+      <a id="aboutLink" className="active" href="#about" onClick={() => setActive(document.getElementById('aboutLink'))}>About</a>
+    <a id="skillsLink" href="#skills" onClick={() => setActive(document.getElementById('skillsLink'))}>Skills</a>
+    <a id="projectsLink" href="#projects" onClick={() => setActive(document.getElementById('projectsLink'))}>Projects</a>
+    <a id="resumeLink" href="#resume" onClick={() => setActive(document.getElementById('resumeLink'))}>Resume</a>
+    <a id="contactLink" href="#contact" onClick={() => setActive(document.getElementById('contactLink'))}>Contact</a>
     </div>
     <div id="about"></div>
     
 
     
-    <div id="about" class="home">
+    <div id="about" className="home">
       <img
         src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg"
         alt="img"
-        class="pfp"
+        className="pfp"
       />
 
-      <div class="description">
+      <div className="description">
         <h1>Brittany Barnes</h1>
         <h2>
           Hi, I'm <b>Brittany</b>. I'm a computer science student at Drexel University
