@@ -1,15 +1,11 @@
 .App {
   text-align: center;
-  margin:auto;
-  max-width: 500px;
+  margin: auto;
+  max-width: 90%;
 }
 
-@media (max-width: 768px) {
-  .App {
-      max-width: 100%; /* or another value suitable for mobile */
-      margin: 0 auto;
-  }
-}
+
+
 
 .App-logo {
   height: 40vmin;
@@ -66,13 +62,14 @@ main {
     color:#38322e;
     font-family:Arial, Helvetica, sans-serif;
     
+    
   }
   
   body {
     background-color: rgb(30, 29, 30);
     font-family:Arial, Helvetica, sans-serif;
     margin: 0px;
-    
+
 
   }
   
@@ -88,6 +85,8 @@ main {
     width: 100%;
     z-index:5;
   }
+
+
   
   .topnav a {
     font-size: 20px;
@@ -98,6 +97,13 @@ main {
     float: left;
     text-align: center;
     transition:0.5s;
+  }
+
+  @media (max-width: 768px) {
+    .topnav a {
+        font-size: 10px; 
+        padding:15px;
+    }
   }
 
   .topnav a.active{
@@ -127,7 +133,7 @@ main {
   
   div.description {
     margin: 55px;
-    width: 500px;
+    width: 50%;
     color:#707070;
   }
   
@@ -135,11 +141,13 @@ main {
   
   .section-title-div{
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     background-color: #323132;
-  
-    padding-left: 100px;
-    padding-right: 100px;
+    margin:auto;
+    padding-left: 80px;
+    padding-right: 80px;
     padding-top: 5px;
     padding-bottom: 5px;
     transition: opacity 1.4s ease; 
@@ -190,13 +198,14 @@ main {
 .skill-div{
     background-color: #252525;
     border-radius: 50px;
-    width:300px;
+    width:75%;
     height:100px;
     padding:5px;
     display: flex; 
     align-items: center; 
     justify-content: center; 
     transition: opacity 1.4s ease; 
+    margin:auto;
 
 }
 
@@ -222,7 +231,7 @@ main {
 }
 
 .project-div{
-    width:600px;
+    width:45%;
     height:500px;
     background-color: #2c2c2c;
     background: linear-gradient(90deg, rgba(44,44,44,1) 0%, rgba(58,59,59,1) 100%);
@@ -232,6 +241,11 @@ main {
     margin-left: 10px;
     position: relative;
     transition: opacity 1.4s ease; 
+}
+@media (max-width: 768px) {
+  .project-div {
+      width:80%;
+  }
 }
 
 .link-button {
@@ -265,7 +279,7 @@ main {
 }
 
 .screenshot-image {
-    height:250px;
+    max-width: 80%;
     display:block;
     margin-left: 20px;
     border-radius: 20px;
@@ -325,12 +339,14 @@ div.resume {
   background-color: #2f2f2f;
   padding: 15px;
   border-radius: 20px;
+  width:70%;
+  margin:auto;
 }
 
 .course-div {
   background-color: #444444;
-
-  width:500px;
+  margin:auto;
+  width:80%;
   border-radius: 15px;
   transition: opacity 1.4s ease; 
 }
@@ -342,7 +358,7 @@ div.resume {
 }
 
 input{
-  
+  margin:auto;
   display: block;
 
   margin-top: 10px;
@@ -351,7 +367,7 @@ input{
 }
 
 .contact-inputs{
-  width:500px;
+  width:75%;
   padding:10px;
   margin-bottom:10px;
   background-color: transparent;
