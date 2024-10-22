@@ -4,6 +4,13 @@
   max-width: 500px;
 }
 
+@media (max-width: 768px) {
+  .App {
+      max-width: 100%; /* or another value suitable for mobile */
+      margin: 0 auto;
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
