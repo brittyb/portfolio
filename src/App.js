@@ -177,7 +177,6 @@ function App() {
     </div>
     
     
-
     <SectionTitle name="about"></SectionTitle>
     <div id="about" className="home">
     
@@ -195,7 +194,6 @@ function App() {
       </div>
     </div>
 
-    
     <SectionTitle name="Skills"/>
       <div id="skills" className="skills section-div">
       
@@ -220,7 +218,7 @@ function App() {
         
       </div>
       <SmallSectionTitle name="Relevant Coursework"></SmallSectionTitle>
-      <div className="course-rows">
+      <div className="course-rows" >
       <Course name="Data Structures and Algorithms"></Course>
       <Course name="Software Architecture"></Course>
       <Course name="Artificial Intelligence"></Course>
@@ -231,14 +229,10 @@ function App() {
       <Course name="Introduction to Computer Engineering"></Course>
       </div>
       </div>
+
       <SectionTitle name="Projects" />
       <div id="projects" className="projects section-div">
-
       
-
-      
-      
-     
       
       <div className="row">
         <Project name="Scrapbook" description="A website that lets couples document the dates they had together. Utilizes Google Gemini API
@@ -264,9 +258,9 @@ function App() {
       </div>
       <SectionTitle name="Resume"/>
       <div id="resume" className="resume section-div">
-        
-        <a href="Resume April 2024.pdf" target="_blank"><button>View</button></a>
-        <a href="Resume April 2024.pdf" download="Resume Brittany Barnes"><button>Download</button></a>
+        <h2>Currently seeking co-op positions</h2>
+        <a href="Resume April 2024.pdf" target="_blank"><button> Resume</button></a>
+
 
       </div>
       <SectionTitle name="Contact" />
@@ -280,7 +274,7 @@ function App() {
         <input type="text" name="name" placeholder="Your Name" className="contact-inputs" required></input>
         <input  type="email" name="email" placeholder="Your Email" className="contact-inputs" required></input>
         <textarea name="message" placeholder="Your Message" className="contact-inputs" required></textarea>
-        <button type="submit">Submit</button>
+        <button className="purple-button" type="submit">Submit</button>
         
       </form>
       
