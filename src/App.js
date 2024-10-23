@@ -58,7 +58,7 @@ const useScrollToSection = () => {
     
     console.log(sectionRef);
     console.log(sectionRect.top);
-    if (sectionRect.top < 400 && sectionRect.top > 200) {
+    if (sectionRect.top < 400 && sectionRect.top >= 0) {
       setScrolledToTarget(true);
     } else {
       setScrolledToTarget(false);
@@ -178,8 +178,9 @@ function App() {
     
     
 
-    
+    <SectionTitle name="about"></SectionTitle>
     <div id="about" className="home">
+    
       <img
         src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg"
         alt="img"
@@ -194,7 +195,7 @@ function App() {
       </div>
     </div>
 
-    <SectionTitle name="about"></SectionTitle>
+    
     <SectionTitle name="Skills"/>
       <div id="skills" className="skills section-div">
       
