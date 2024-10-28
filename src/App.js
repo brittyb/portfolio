@@ -1,6 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import debounce from 'lodash/debounce';
+
+
+
 
 function setActive(element){
   // Remove active class from all links
@@ -33,6 +37,7 @@ const useScrollToTarget = () => {
     }
   };
 
+  
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
@@ -45,60 +50,31 @@ const useScrollToTarget = () => {
   return [scrolledToTarget, sectionRef];
 };
 
-const useScrollToSection = () => {
-  
-  const [scrolledToTarget, setScrolledToTarget] = useState(false);
-  const sectionRef = useRef(null);
-  
 
-  const handleScroll = () => {
-    if (!sectionRef.current) return;
-
-    const sectionRect = sectionRef.current.getBoundingClientRect();
-    
-    console.log(sectionRef);
-    console.log(sectionRect.top);
-    if (sectionRect.top < 400 && sectionRect.top >= 0) {
-      setScrolledToTarget(true);
-    } else {
-      setScrolledToTarget(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  return [scrolledToTarget, sectionRef];
-};
 
 const SectionTitle = (props) => {
   // State to track whether the scroll position has reached the target point
   
   const [scrolledToTarget, sectionRef] = useScrollToTarget();
-  const [scrolledToSection, sectionRef2] = useScrollToSection();
+  const debouncedSetActive = debounce(setActive, 150); // Update active class at most every 100ms
+
   useEffect(() => {
 
-    if (scrolledToSection && props.name) {
+    if (scrolledToTarget && props.name) {
       const name = props.name.toLowerCase();
       const sectionLink = document.getElementById(`${name}Link`);
       if (sectionLink) {
-        setActive(sectionLink);
+        debouncedSetActive(sectionLink);
       } else {
         console.log(`Element with ID ${name}Link not found`);
       }
     }
-  }, [scrolledToSection]);
+  }, [scrolledToTarget]);
 
   
   return (
     <div ref={sectionRef} id={`${props.name}Heading`}  className={`section-title-div ${scrolledToTarget ? 'foreground-opacity' : 'background-opacity'}`}>
-      <h3 ref={sectionRef2} className={`${props.name}Title section-title`}>{props.name}</h3>
+      <h3  className={`${props.name}Title section-title`}>{props.name}</h3>
     </div>
   );
 };
@@ -170,9 +146,10 @@ function App() {
     <div className="App">
       <div className="topnav">
       <a id="aboutLink" className="active" href="#about" onClick={() => setActive(document.getElementById('aboutLink'))}>About</a>
-    <a id="skillsLink" href="#skills" onClick={() => setActive(document.getElementById('skillsLink'))}>Skills</a>
-    <a id="projectsLink" href="#projects" onClick={() => setActive(document.getElementById('projectsLink'))}>Projects</a>
-    <a id="resumeLink" href="#resume" onClick={() => setActive(document.getElementById('resumeLink'))}>Resume</a>
+      <a id="resumeLink" href="#resume" onClick={() => setActive(document.getElementById('resumeLink'))}>Resume</a>
+      <a id="skillsLink" href="#skills" onClick={() => setActive(document.getElementById('skillsLink'))}>Skills</a>
+      <a id="projectsLink" href="#projects" onClick={() => setActive(document.getElementById('projectsLink'))}>Projects</a>
+    
     <a id="contactLink" href="#contact" onClick={() => setActive(document.getElementById('contactLink'))}>Contact</a>
     </div>
     
@@ -181,7 +158,7 @@ function App() {
     <div id="about" className="home">
     
       <img
-        src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg"
+        src={process.env.PUBLIC_URL + "/brittany.jpg"}
         alt="img"
         className="pfp"
       />
@@ -189,11 +166,17 @@ function App() {
       <div className="description">
         <h1>Brittany Barnes</h1>
         <h2>
-          Hi, I'm <b>Brittany</b>. I'm a computer science student at Drexel University
+          Hi, I'm <b>Brittany</b>. I'm a computer science student at Drexel University. I'm a driven student passionate about using my creativity to solve problems
         </h2>
       </div>
     </div>
+    <SectionTitle name="Resume"/>
+      <div id="resume" className="resume section-div">
+        <h2>I'm currently seeking co-op positions. Available to work March 31st-September 19th 2025</h2>
+        <a href="/brittyb-portfolio/Resume.pdf" target="_blank"><button> View Resume</button></a>
 
+
+      </div>
     <SectionTitle name="Skills"/>
       <div id="skills" className="skills section-div">
       
@@ -238,7 +221,7 @@ function App() {
         <Project name="Scrapbook" description="A website that lets couples document the dates they had together. Utilizes Google Gemini API
          to recommend them date ideas with AI. Create dates with titles, images, dates, and descriptions to search for them and add them to albums. 
          I was primarily responsible for the JavaScript and Firebase functionality, but I also
-         created HTML and CSS. " imagePath="/scrapbook.png"></Project>
+         created HTML and CSS. " link="https://github.com/brittyb/Scrapbook" imagePath="/scrapbook.png"></Project>
          
         <Project name="Escape from the Zeller Cellar" description="A web-based escape room game. Escape from the evil wizard Zeller's
          mysterious cellar. Race against the clock, gather clues, and use the objects you find to escape the Zeller Cellar. 
@@ -256,13 +239,7 @@ function App() {
         imagePath="/graphics-project.png"></Project>
       </div>
       </div>
-      <SectionTitle name="Resume"/>
-      <div id="resume" className="resume section-div">
-        <h2>Currently seeking co-op positions</h2>
-        <a href="Resume April 2024.pdf" target="_blank"><button> Resume</button></a>
-
-
-      </div>
+      
       <SectionTitle name="Contact" />
       <div id="contact" className="contact section-div">
       
