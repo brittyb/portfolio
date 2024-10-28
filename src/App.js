@@ -173,7 +173,7 @@ function App() {
     <SectionTitle name="Resume"/>
       <div id="resume" className="resume section-div">
         <h2>I'm currently seeking co-op positions. Available to work March 31st-September 19th 2025</h2>
-        <a href="/brittyb-portfolio/Resume.pdf" target="_blank"><button> View Resume</button></a>
+        <a href="/Resume.pdf" target="_blank"><button> View Resume</button></a>
 
 
       </div>
