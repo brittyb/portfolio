@@ -207,6 +207,7 @@ function App() {
       <Course name="Data Structures and Algorithms"></Course>
       <Course name="Software Architecture"></Course>
       <Course name="Artificial Intelligence"></Course>
+      <Course name="Machine Learning"></Course>
       <Course name="Introduction to Software Engineering and Development"></Course>
       <Course name="Mathematical Foundations of Computer Science"></Course>
       <Course name="Advanced Programming Techniques"></Course>
