@@ -174,7 +174,7 @@ function App() {
     </div>
     <SectionTitle name="Resume"/>
       <div id="resume" className="resume section-div">
-        <h2>I'm currently seeking co-op positions. Available to work March 31st-September 19th 2025</h2>
+        <h2>I am currently an IOS designer/developer for Mama May I seeking part-time opportunities. Available to work now until September 19th 2025</h2>
         <a href="/portfolio/pdfs/Resume.pdf" target="_blank"><button> View Resume</button></a>
 
 
@@ -213,6 +213,7 @@ function App() {
       <Course name="Advanced Programming Techniques"></Course>
 
       <Course name="Introduction to Computer Engineering"></Course>
+      <Course name="Number Theory and Cryptography"></Course>
       </div>
       </div>
 
