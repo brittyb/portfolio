@@ -225,14 +225,14 @@ main {
   
     background-color: #252525;
     border-radius: 50px;
-    width:75%;
+    width:33.3%;
     height:100px;
     padding:5px;
     display: flex; 
     align-items: center; 
     justify-content: center; 
     transition: opacity 0.5s ease, transform 0.8s ease;
-    margin:auto;
+    
     
   
 }
@@ -255,7 +255,7 @@ main {
     display: flex; 
     
     gap: 10px; 
-    max-width: 100%; 
+   justify-content: center;
 }
 
 @media (max-width: 768px) {

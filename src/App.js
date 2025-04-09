@@ -198,7 +198,7 @@ function App() {
       <div className="row">
         <Skill name="Git" link="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"></Skill>
         <Skill name="Python" link="https://i.pinimg.com/originals/82/a2/18/82a2188c985ce75402ae44fc43fe7e5e.png"></Skill>
-        <Skill name="Unity" link="https://assets.stickpng.com/images/62e131df7fe3599fdd46ecb3.png"></Skill>
+        <Skill name="Unity" link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMEpvhQOuCkjQFYaax3e8BMa9yk4Y6xt_HUQ&s"></Skill>
         </div>
         <div className="row">
         <Skill name="Kotlin" link="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png"></Skill>
