@@ -236,7 +236,12 @@ main {
     
   
 }
-
+@media (max-width: 768px) {
+  .skill-div {
+    width:75%;
+  }
+  
+}
 
 .skill-image{
     max-width: 80px;
