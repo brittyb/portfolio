@@ -174,7 +174,7 @@ function App() {
     </div>
     <SectionTitle name="Resume"/>
       <div id="resume" className="resume section-div">
-        <h2>I am currently an IOS designer/developer for Mama May I seeking part-time opportunities. Available to work now until September 19th 2025</h2>
+        <h2>I am currently a mobile application designer/developer for Mama May I seeking part-time opportunities. Available to work now until September 19th 2025</h2>
         <a href="/portfolio/pdfs/Resume.pdf" target="_blank"><button> View Resume</button></a>
 
 
@@ -191,13 +191,17 @@ function App() {
       <div className="row">
       <Skill name="SQL" link="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"></Skill>
       <Skill name="C" link="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/926px-C_Programming_Language.svg.png"></Skill>
-      <Skill name="Kotlin" link="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png"></Skill>
+      <Skill name="C#" link="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ACsharp_Logo.png&psig=AOvVaw1YwJd_PiIs7yydOz7zafG-&ust=1744313288745000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCPCUjcHXy4wDFQAAAAAdAAAAABAE"></Skill>
 
       </div>
 
       <div className="row">
         <Skill name="Git" link="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"></Skill>
         <Skill name="Python" link="https://i.pinimg.com/originals/82/a2/18/82a2188c985ce75402ae44fc43fe7e5e.png"></Skill>
+        <Skill name="Unity" link="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.stickpng.com%2Fimg%2Ficons-logos-emojis%2Ftech-companies%2Funity-new-logo&psig=AOvVaw2NR9IWstjeNRhGN1dXNq56&ust=1744313532284000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCKimqrXYy4wDFQAAAAAdAAAAABAQ"></Skill>
+        </div>
+        <div className="row">
+        <Skill name="Kotlin" link="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png"></Skill>
         <Skill name="MIPS" link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDZxkoYfqOY6Jbr90GI-u9CxuBv9NxtQA3fjG5H8gNFjrJbdPTxWUeVmIUjBC92CTkZzA&usqp=CAU"></Skill>
         </div>
         
