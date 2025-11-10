@@ -190,13 +190,13 @@ function App() {
            a new feature that allows users to make their own profiles with a name and color associated.
         </p>
 
-        <img src={process.env.PUBLIC_URL + "/TableTalk0.png"} alt="Table Talk Home Page"></img>
-        <img src={process.env.PUBLIC_URL + "/TableTalk1.png"} alt="User-profile feature"></img>
+        <img className="screenshot-image-app" src={process.env.PUBLIC_URL + "/TableTalk0.png"} alt="Table Talk Home Page"></img>
+        <img className="screenshot-image-app" src={process.env.PUBLIC_URL + "/TableTalk1.png"} alt="User-profile feature"></img>
        
            
-        <img src={process.env.PUBLIC_URL + "/TableTalk2.png"} alt="User-profile selection"></img>
+        <img className="screenshot-image-app" src={process.env.PUBLIC_URL + "/TableTalk2.png"} alt="User-profile selection"></img>
          <p>The name and color appears on the user's response.</p>
-        <img src={process.env.PUBLIC_URL + "/TableTalk3.png"} alt="Recording a response"></img>
+        <img className="screenshot-image-app" src={process.env.PUBLIC_URL + "/TableTalk3.png"} alt="Recording a response"></img>
         <p>
           I also created an animated tutorial and screen swiping/shaking functionality to go to the
           next/previous card.
