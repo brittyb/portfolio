@@ -149,6 +149,7 @@ function App() {
       <div className="topnav">
       <a id="aboutLink" className="active" href="#about" onClick={() => setActive(document.getElementById('aboutLink'))}>About</a>
       <a id="resumeLink" href="#resume" onClick={() => setActive(document.getElementById('resumeLink'))}>Resume</a>
+      <a id="experienceLink" href="#work-experience" onClick={() => setActive(document.getElementById('experienceLink'))}>Work Experience</a>
       <a id="skillsLink" href="#skills" onClick={() => setActive(document.getElementById('skillsLink'))}>Skills</a>
       <a id="projectsLink" href="#projects" onClick={() => setActive(document.getElementById('projectsLink'))}>Projects</a>
     
@@ -176,9 +177,31 @@ function App() {
       <div id="resume" className="resume section-div">
         <h2>I am currently a senior at Drexel University looking for a post-graduate job. Graduating June 2026</h2>
         <a href="/portfolio/pdfs/Resume.pdf" target="_blank"><button> View Resume</button></a>
-
-
       </div>
+
+      <SectionTitle name="Work Experience"/>
+        <div id="work-experience" style={{ scrollMarginTop: 250 }}>      
+        <h2>App Designer/Developer for <a href="https://jessicaperkins.com/about" target="_blank">JessicaPerkins/Mama May I</a></h2>
+        <p>Continued the devlopment of the Table Talk App using C# in Unity. Table Talk allows you to record responses
+          to cards with questions that are meant to connect people. Responses can be recorded in audio or text form. While working on this app
+           I added search functionality that lets you search for a specific card or responses. Searching includes
+           date ranges, text, and filtering by audio/text responses. I updated the 
+           visuals of the cards being displayed by creating new text panel prefabs. I designed and implemented
+           a new feature that allows users to make their own profiles with a name and color associated.
+        </p>
+
+        <img src={process.env.PUBLIC_URL + "/TableTalk0.png"} alt="Table Talk Home Page"></img>
+        <img src={process.env.PUBLIC_URL + "/TableTalk1.png"} alt="User-profile feature"></img>
+       
+           
+        <img src={process.env.PUBLIC_URL + "/TableTalk2.png"} alt="User-profile selection"></img>
+         <p>The name and color appears on the user's response.</p>
+        <img src={process.env.PUBLIC_URL + "/TableTalk3.png"} alt="Recording a response"></img>
+        <p>
+          I also created an animated tutorial and screen swiping/shaking functionality to go to the
+          next/previous card.
+        </p>
+        </div>
     <SectionTitle name="Skills"/>
       <div id="skills" className="skills section-div">
       
