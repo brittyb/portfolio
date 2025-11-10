@@ -174,7 +174,7 @@ function App() {
     </div>
     <SectionTitle name="Resume"/>
       <div id="resume" className="resume section-div">
-        <h2>I am currently a mobile application designer/developer for Mama May I seeking part-time opportunities. Available to work now until September 19th 2025</h2>
+        <h2>I am currently a senior at Drexel University looking for a post-graduate job. Graduating June 2026</h2>
         <a href="/portfolio/pdfs/Resume.pdf" target="_blank"><button> View Resume</button></a>
 
 
@@ -184,26 +184,30 @@ function App() {
       
       <div className="skill-rows">
       <div className="row">
-      <Skill name="React" link="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"></Skill>
-      <Skill name="Java" link="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"></Skill>
-      <Skill name="Firebase" link="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Firebase_icon.svg/2048px-Firebase_icon.svg.png"></Skill>
+        <Skill name="Python" link="https://i.pinimg.com/originals/82/a2/18/82a2188c985ce75402ae44fc43fe7e5e.png"></Skill>
+        <Skill name="SQL" link="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"></Skill>
+        <Skill name="PostgreSQL" link="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"></Skill>
+
       </div>
       <div className="row">
-      <Skill name="SQL" link="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"></Skill>
-      <Skill name="C" link="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/926px-C_Programming_Language.svg.png"></Skill>
-      <Skill name="C#" link="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png"></Skill>
+        <Skill name="AWS" link="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"></Skill>
+        <Skill name="React" link="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"></Skill>
+        <Skill name="C" link="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/926px-C_Programming_Language.svg.png"></Skill>
+
 
       </div>
 
       <div className="row">
         <Skill name="Git" link="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"></Skill>
-        <Skill name="Python" link="https://i.pinimg.com/originals/82/a2/18/82a2188c985ce75402ae44fc43fe7e5e.png"></Skill>
         <Skill name="Unity" link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMEpvhQOuCkjQFYaax3e8BMa9yk4Y6xt_HUQ&s"></Skill>
-        </div>
-        <div className="row">
-        <Skill name="Kotlin" link="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png"></Skill>
-        <Skill name="MIPS" link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDZxkoYfqOY6Jbr90GI-u9CxuBv9NxtQA3fjG5H8gNFjrJbdPTxWUeVmIUjBC92CTkZzA&usqp=CAU"></Skill>
-        </div>
+        <Skill name="C#" link="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png"></Skill>
+
+      </div>
+      <div className="row">
+        <Skill name="Java" link="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"></Skill>
+        <Skill name="Firebase" link="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Firebase_icon.svg/2048px-Firebase_icon.svg.png"></Skill>
+        <Skill name="RISC_V" link="https://risc-v-store.myshopify.com/cdn/shop/products/RISCV-DecalStacked_82f9f849-57c7-4c0d-898f-092bb1a96686.png?v=1661764351"></Skill>
+      </div>
         
       </div>
       <SmallSectionTitle name="Relevant Coursework"></SmallSectionTitle>
@@ -212,6 +216,7 @@ function App() {
       <Course name="Software Architecture"></Course>
       <Course name="Artificial Intelligence"></Course>
       <Course name="Machine Learning"></Course>
+      <Course name="Web Development"></Course>
       <Course name="Introduction to Software Engineering and Development"></Course>
       <Course name="Mathematical Foundations of Computer Science"></Course>
       <Course name="Advanced Programming Techniques"></Course>
@@ -224,16 +229,23 @@ function App() {
       <SectionTitle name="Projects" />
       <div id="projects" className="projects section-div">
       
-      
       <div className="row">
-        <Project name="Scrapbook" description="A website that lets couples document the dates they had together. Utilizes Google Gemini API
-         to recommend them date ideas with AI. Create dates with titles, images, dates, and descriptions to search for them and add them to albums. 
-         I was primarily responsible for the JavaScript and Firebase functionality, but I also
-         created HTML and CSS. " link="https://github.com/brittyb/Scrapbook" imagePath="/scrapbook.png"></Project>
+        <Project name="Campus Marketplace" description="A website that allows Drexel students to sign up using
+        their @drexel.edu email address and sell items to other students. Users can create posts to list what they are
+        selling so that other students can search for them. Users can rate sellers and chat with them.
+         Uses a PostgreSQL database to store users/posts. Uses web sockets for chat functionality. Project currently in progress
+          and set to be completed in December."
+         ></Project>
+      </div>
+      <div className="row">
+        <Project name="Scrapbook" description="A website that lets friends/couples document the dates they had together. Utilizes Google Gemini API
+         to recommend them outing ideas with AI. Create posts to log activities with titles, images, dates, and descriptions to search for them and add them to albums. 
+         I was primarily responsible adding posts to the database and retrieving them using JavaScript and Firebase, but I also
+         created HTML and CSS to display them. " imagePath="/scrapbook.png"></Project>
          
         <Project name="Escape from the Zeller Cellar" description="A web-based escape room game. Escape from the evil wizard Zeller's
          mysterious cellar. Race against the clock, gather clues, and use the objects you find to escape the Zeller Cellar. 
-         I contributed to the HTML, CSS, Java Servlets, and SQL queries of this project. Each action saves the state of the game 
+         I contributed to the HTML, CSS, Java Servlets, and MySQL queries of this project. Each action saves the state of the game 
         in a SQL database" link="https://github.com/hgrimm000/ZellerCellar"
         imagePath="/zeller-cellar.png"></Project>
         
