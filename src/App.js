@@ -256,8 +256,7 @@ function App() {
         <Project name="Campus Marketplace" description="A website that allows Drexel students to sign up using
         their @drexel.edu email address and sell items to other students. Users can create posts to list what they are
         selling so that other students can search for them. Users can rate sellers and chat with them.
-         Uses a PostgreSQL database to store users/posts. Uses web sockets for chat functionality. Project currently in progress
-          and set to be completed in December."
+         Uses a PostgreSQL database to store users/posts. Uses web sockets for chat functionality." imagePath="/Campus_Marketplace.png"
          ></Project>
       </div>
       <div className="row">
