@@ -253,7 +253,7 @@ function App() {
       <div id="projects" className="projects section-div">
       
       <div className="row">
-        <Project name="Campus Marketplace" description="A website that allows Drexel students to sign up using
+        <Project name="Campus Marketplace" description="A website created using Node.js and express that allows Drexel students to sign up using
         their @drexel.edu email address and sell items to other students. Users can create posts to list what they are
         selling so that other students can search for them. Users can rate sellers and chat with them.
          Uses a PostgreSQL database to store users/posts. Uses web sockets for chat functionality." link="https://github.com/PW13052003/Drexel-Marketplace" imagePath="/Campus_Marketplace.png"
