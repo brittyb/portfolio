@@ -175,7 +175,7 @@ function App() {
     </div>
     <SectionTitle name="Resume"/>
       <div id="resume" className="resume section-div">
-        <h2>I am currently a senior at Drexel University looking for a post-graduate job. Graduating June 2026</h2>
+        <h2>I am a Drexel University new grad looking for a post-graduate job. Availble immediately</h2>
         <a href="/portfolio/pdfs/Resume_public_version.pdf" target="_blank"><button> View Resume</button></a>
       </div>
 
