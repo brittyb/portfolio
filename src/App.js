@@ -176,7 +176,7 @@ function App() {
     <SectionTitle name="Resume"/>
       <div id="resume" className="resume section-div">
         <h2>I am currently a senior at Drexel University looking for a post-graduate job. Graduating June 2026</h2>
-        <a href="/portfolio/pdfs/Resume.pdf" target="_blank"><button> View Resume</button></a>
+        <a href="/portfolio/pdfs/Resume_public_version.pdf" target="_blank"><button> View Resume</button></a>
       </div>
 
       <SectionTitle name="Work Experience"/>
@@ -213,9 +213,9 @@ function App() {
 
       </div>
       <div className="row">
-        <Skill name="AWS" link="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"></Skill>
-        <Skill name="React" link="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"></Skill>
-        <Skill name="C" link="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/926px-C_Programming_Language.svg.png"></Skill>
+        <Skill name="React" link="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/960px-React-icon.svg.png"></Skill>
+        <Skill name="C" link="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1920px-C_Programming_Language.svg.png"></Skill>
+        <Skill name="Java" link="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"></Skill>
 
 
       </div>
@@ -223,13 +223,11 @@ function App() {
       <div className="row">
         <Skill name="Git" link="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"></Skill>
         <Skill name="Unity" link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMEpvhQOuCkjQFYaax3e8BMa9yk4Y6xt_HUQ&s"></Skill>
-        <Skill name="C#" link="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png"></Skill>
+        <Skill name="C#" link="https://upload.wikimedia.org/wikipedia/commons/3/3c/Logo_C_sharp.png"></Skill>
 
       </div>
       <div className="row">
-        <Skill name="Java" link="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"></Skill>
-        <Skill name="Firebase" link="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Firebase_icon.svg/2048px-Firebase_icon.svg.png"></Skill>
-        <Skill name="RISC_V" link="https://risc-v-store.myshopify.com/cdn/shop/products/RISCV-DecalStacked_82f9f849-57c7-4c0d-898f-092bb1a96686.png?v=1661764351"></Skill>
+        <Skill name="Firebase" link="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/firebase.webp"></Skill>
       </div>
         
       </div>
